@@ -7,4 +7,16 @@ models:
             tests:
                 - not_null
                 - unique
+    - name: dim_employee
+      columns:              
+          - name: employee_id
+            tests:
+                - not_null
+                - unique
+    - name: dim_product
+      columns:              
+          - name: product_id
+            tests:
+                - not_null
+                - unique
 

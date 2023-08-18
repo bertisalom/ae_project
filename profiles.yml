@@ -4,7 +4,7 @@ ae_project:
       dataset: dbt_berti
       job_execution_timeout_seconds: 300
       job_retries: 1
-      location: US
+      location: EU
       method: oauth
       priority: interactive
       project: analytics-394014

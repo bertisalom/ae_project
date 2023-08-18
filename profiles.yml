@@ -1,0 +1,13 @@
+ae_project:
+  outputs:
+    dev:
+      dataset: dbt_berti
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: EU
+      method: oauth
+      priority: interactive
+      project: analytics-394014
+      threads: 1
+      type: bigquery
+  target: dev

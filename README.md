@@ -1,4 +1,4 @@
-#Welcome to my data modelling project using dbt and BigQuery!
+# Welcome to my data modelling project using dbt and BigQuery!
 
 ## Project Goal
 The goal of project is to build hybrid data modelling using kimball and OBT method to create self-service data analysis for business.

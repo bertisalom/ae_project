@@ -7,13 +7,14 @@ The goal of project is to build hybrid data modelling using kimball and OBT meth
 The Northwind data, which can be found in data_source folder as csv format, is used and ingested into BigQuery as a data lake layer .
 
 ### Architecture Design
+                    
 ```seq
-Data Sources (OLTP)->BQ Data Lake: Data Ingestion
+Data Sources (OLTP)- >BQ Data Lake: Data Ingestion
 Note left of Data Sources (OLTP): Data Sources: CSV format in this project
-BQ Data Lake->Staging Layer: Load
-Staging Layer->Dimensional Data Warehouse Layer: Transform
-Dimensional Data Warehouse Layer->Reporting Layer (OBT):Transform
-Reporting Layer (OBT)->BI Tools: Visualize
+BQ Data Lake- >Staging Layer: Load
+Staging Layer- >Dimensional Data Warehouse Layer: Transform
+Dimensional Data Warehouse Layer->Reporting Layer (OBT): Transform
+Reporting Layer (OBT)- >BI Tools: Visualize
 Note right of BI Tools: BI tools is not demonstrated in this project
 ```
 

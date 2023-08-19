@@ -4,19 +4,12 @@
 The goal of project is to build hybrid data modelling using kimball and OBT method to create self-service data analysis for business.
 
 ## Source Data
-The Northwind data, which can be found in data_source folder as csv format, is used and ingested into BigQuery as a data lake layer .
+The Northwind data, which can be found in data_source folder as csv format, is used and ingested into BigQuery as a data lake layer.
 
 ### Architecture Design
                     
-```seq
-Data Sources (OLTP)- >BQ Data Lake: Data Ingestion
-Note left of Data Sources (OLTP): Data Sources: CSV format in this project
-BQ Data Lake- >Staging Layer: Load
-Staging Layer- >Dimensional Data Warehouse Layer: Transform
-Dimensional Data Warehouse Layer->Reporting Layer (OBT): Transform
-Reporting Layer (OBT)- >BI Tools: Visualize
-Note right of BI Tools: BI tools is not demonstrated in this project
-```
+![IMG_7435](https://github.com/bertisalom/ae_project/assets/48531812/92e988bd-4f8d-4190-983a-3ae4f7374067)
+
 
 ### Running this project
 To get up and running with this project:
@@ -24,18 +17,18 @@ To get up and running with this project:
 1. Install dbt using [these instructions.](https://docs.getdbt.com/docs/core/installation)
 2. Clone this repository.
 3. Change into the ae_project directory from the command line:
-	`$ cd ae_project`
+	```cd ae_project```
 4. Ensure your profile is setup correctly from the command line:
-	`$ dbt debug`
+	```dbt debug```
 6. Create a dataset called dl_northwind in Google BigQuery and load csv (found in source_data folder) files into this dataset
 7. Run the models:
-	`$ dbt run`
+	```dbt run```
 8. Test the output of the models:
-	`$ dbt test`
+	```dbt test```
 9. Generate documentation for the project:
-	`$ dbt docs generate`
+	```dbt docs generate```
 10. View the documentation for the project:
-	`$ dbt docs serve`
+	```dbt docs serve```
 
 
 #### For more information on dbt:

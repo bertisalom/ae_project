@@ -17,18 +17,30 @@ To get up and running with this project:
 1. Install dbt using [these instructions.](https://docs.getdbt.com/docs/core/installation)
 2. Clone this repository.
 3. Change into the ae_project directory from the command line:
-	```cd ae_project```
-4. Ensure your profile is setup correctly from the command line:
-	```dbt debug```
-6. Create a dataset called dl_northwind in Google BigQuery and load csv (found in source_data folder) files into this dataset
-7. Run the models:
-	```dbt run```
-8. Test the output of the models:
-	```dbt test```
-9. Generate documentation for the project:
-	```dbt docs generate```
-10. View the documentation for the project:
-	```dbt docs serve```
+	```
+	cd ae_project
+	```
+5. Ensure your profile is setup correctly from the command line:
+	```
+	dbt debug
+	```
+7. Create a dataset called dl_northwind in Google BigQuery and load csv (found in source_data folder) files into this dataset
+8. Run the models:
+	```
+	dbt run
+ 	```
+10. Test the output of the models:
+	```
+	dbt test
+ 	```
+12. Generate documentation for the project:
+	```
+	dbt docs generate
+ 	```
+14. View the documentation for the project:
+	```
+	dbt docs serve
+ 	```
 
 
 #### For more information on dbt:
